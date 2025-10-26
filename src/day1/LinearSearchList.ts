@@ -7,5 +7,6 @@ export default function linear_search(
             return true;
         }
     }
+
     return false;
 }
