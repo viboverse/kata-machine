@@ -3,7 +3,7 @@ export default function two_crystal_balls(breaks: boolean[]): number {
 
     let i = jumpAmount;
 
-    for (; i < breaks.length; i += jumpAmount) {
+    for (; i < breaks.length; i++) {
         if (breaks[i]) {
             break;
         }
@@ -11,10 +11,11 @@ export default function two_crystal_balls(breaks: boolean[]): number {
 
     i -= jumpAmount;
 
-    for (let j = 0; j <= jumpAmount && i < breaks.length, ++j, ++i; ) {
+    for (let j = 0; j <= jumpAmount && i < breaks.length; j++, i++) {
         if (breaks[i]) {
             return i;
         }
     }
+
     return -1;
 }
